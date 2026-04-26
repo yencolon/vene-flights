@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 #page {
   display: flex;
   align-items: stretch;
@@ -12,8 +14,6 @@
   flex-direction: column;
   padding: 24px 16px 48px;
   box-sizing: border-box;
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
 }
 

@@ -1,21 +1,25 @@
-import { useMemo } from 'preact/hooks'
-import { flightsByIcao, colorForOperator } from '../data/flights'
-import './sidebar.css'
+import { useMemo } from "preact/hooks";
+import { flightsByIcao, colorForOperator } from "../data/flights";
+import { airports } from "../data/airports";
 
 export interface SidebarProps {
-  selectedIcao: string | null
-  hiddenOperators: Set<string>
-  setHiddenOperators: (next: Set<string>) => void
-  hiddenDests: Set<string>
-  setHiddenDests: (next: Set<string>) => void
-  showLabels: boolean
-  setShowLabels: (next: boolean) => void
-  destQuery: string
-  setDestQuery: (next: string) => void
+  selectedIcaos: Set<string>;
+  setSelectedIcaos: (next: Set<string>) => void;
+  hiddenOperators: Set<string>;
+  setHiddenOperators: (next: Set<string>) => void;
+  hiddenDests: Set<string>;
+  setHiddenDests: (next: Set<string>) => void;
+  showLabels: boolean;
+  setShowLabels: (next: boolean) => void;
+  destQuery: string;
+  setDestQuery: (next: string) => void;
+  originQuery: string;
+  setOriginQuery: (next: string) => void;
 }
 
 export function Sidebar({
-  selectedIcao,
+  selectedIcaos,
+  setSelectedIcaos,
   hiddenOperators,
   setHiddenOperators,
   hiddenDests,
@@ -24,58 +28,111 @@ export function Sidebar({
   setShowLabels,
   destQuery,
   setDestQuery,
+  originQuery,
+  setOriginQuery,
 }: SidebarProps) {
-  const flightData = selectedIcao ? flightsByIcao[selectedIcao] : undefined
+  // Combine flight data from all selected origins
+  const flightData = useMemo(() => {
+    if (selectedIcaos.size === 0) return undefined;
+    const allOperators = new Set<string>();
+    const destMap = new Map<string, { code: string; city: string }>();
+
+    for (const icao of selectedIcaos) {
+      const data = flightsByIcao[icao];
+      if (!data) continue;
+      for (const dest of data.destinations) {
+        destMap.set(dest.airport_code, {
+          code: dest.airport_code,
+          city: dest.city,
+        });
+        for (const flight of dest.flights) {
+          allOperators.add(flight.operator);
+        }
+      }
+    }
+
+    return {
+      operators: Array.from(allOperators).sort(),
+      destinations: Array.from(destMap.values()).sort((a, b) =>
+        a.city.localeCompare(b.city),
+      ),
+    };
+  }, [selectedIcaos]);
+
+  const sortedOrigins = useMemo(() => {
+    return [...airports]
+      .filter((a) => flightsByIcao[a.icao])
+      .sort((a, b) => a.city.localeCompare(b.city));
+  }, []);
+
+  const filteredOrigins = useMemo(() => {
+    const q = originQuery.trim().toLowerCase();
+    if (!q) return sortedOrigins;
+    return sortedOrigins.filter(
+      (a) =>
+        a.city.toLowerCase().includes(q) || a.iata.toLowerCase().includes(q),
+    );
+  }, [sortedOrigins, originQuery]);
 
   const allOperators = useMemo(() => {
-    if (!flightData) return [] as string[]
-    const set = new Set<string>()
-    for (const d of flightData.destinations) for (const l of d.flights) set.add(l.operator)
-    return [...set].sort()
-  }, [flightData])
+    return flightData?.operators ?? [];
+  }, [flightData]);
 
   const allDests = useMemo(() => {
-    if (!flightData) return [] as ReadonlyArray<{ code: string; city: string }>
-    return [...flightData.destinations]
-      .map((d) => ({ code: d.airport_code, city: d.city }))
-      .sort((a, b) => a.city.localeCompare(b.city))
-  }, [flightData])
+    return flightData?.destinations ?? [];
+  }, [flightData]);
 
   const filteredDests = useMemo(() => {
-    const q = destQuery.trim().toLowerCase()
-    if (!q) return allDests
+    const q = destQuery.trim().toLowerCase();
+    if (!q) return allDests;
     return allDests.filter(
-      (d) => d.city.toLowerCase().includes(q) || d.code.toLowerCase().includes(q),
-    )
-  }, [allDests, destQuery])
+      (d) =>
+        d.city.toLowerCase().includes(q) || d.code.toLowerCase().includes(q),
+    );
+  }, [allDests, destQuery]);
+
+  const toggleOrigin = (icao: string) => {
+    const next = new Set(selectedIcaos);
+    if (next.has(icao)) next.delete(icao);
+    else next.add(icao);
+    setSelectedIcaos(next);
+  };
 
   const toggleOperator = (op: string) => {
-    const next = new Set(hiddenOperators)
-    if (next.has(op)) next.delete(op)
-    else next.add(op)
-    setHiddenOperators(next)
-  }
+    const next = new Set(hiddenOperators);
+    if (next.has(op)) next.delete(op);
+    else next.add(op);
+    setHiddenOperators(next);
+  };
 
   const toggleDest = (code: string) => {
-    const next = new Set(hiddenDests)
-    if (next.has(code)) next.delete(code)
-    else next.add(code)
-    setHiddenDests(next)
-  }
+    const next = new Set(hiddenDests);
+    if (next.has(code)) next.delete(code);
+    else next.add(code);
+    setHiddenDests(next);
+  };
 
-  const totalHidden = hiddenOperators.size + hiddenDests.size
+  const totalHidden = hiddenOperators.size + hiddenDests.size;
 
   return (
-    <aside class="sidebar" role="region" aria-label="Filters">
-      <div class="sidebar-header">
-        <h3>Filters</h3>
+    <aside
+      class="w-80 h-screen overflow-y-auto shrink-0 border-r flex flex-col gap-3.5 p-4"
+      style="background: var(--bg); border-color: var(--border)"
+      role="region"
+      aria-label="Filters"
+    >
+      <div class="flex items-baseline justify-between gap-2">
+        <h3 class="text-sm font-semibold m-0" style="color: var(--text-h)">
+          Filters
+        </h3>
         {totalHidden > 0 && (
           <button
             type="button"
-            class="sidebar-clear"
+            class="bg-transparent border-0 p-0 text-xs cursor-pointer hover:underline"
+            style="color: var(--accent)"
             onClick={() => {
-              setHiddenOperators(new Set())
-              setHiddenDests(new Set())
+              setHiddenOperators(new Set());
+              setHiddenDests(new Set());
             }}
           >
             Reset
@@ -83,40 +140,117 @@ export function Sidebar({
         )}
       </div>
 
-      <label class="sidebar-toggle">
+      <label
+        class="flex items-center gap-2 text-sm cursor-pointer"
+        style="color: var(--text-h)"
+      >
         <input
           type="checkbox"
           checked={showLabels}
-          onChange={(e) => setShowLabels((e.currentTarget as HTMLInputElement).checked)}
+          class="cursor-pointer"
+          onChange={(e) =>
+            setShowLabels((e.currentTarget as HTMLInputElement).checked)
+          }
         />
         <span>Show city names</span>
       </label>
 
+      <div class="flex flex-col gap-1.5">
+        <div class="flex items-baseline justify-between gap-2">
+          <h4
+            class="text-xs font-semibold m-0 uppercase tracking-wide"
+            style="color: var(--text)"
+          >
+            Origin Airports
+          </h4>
+          {selectedIcaos.size > 0 && (
+            <button
+              type="button"
+              class="bg-transparent border-0 p-0 text-xs cursor-pointer hover:underline"
+              style="color: var(--accent)"
+              onClick={() => setSelectedIcaos(new Set())}
+            >
+              Clear
+            </button>
+          )}
+        </div>
+        <input
+          type="search"
+          class="w-full box-border text-sm rounded px-2 py-1.5 mb-1 border"
+          style="color: var(--text-h); background: var(--code-bg); border-color: var(--border)"
+          placeholder="Search city or IATA…"
+          value={originQuery}
+          onInput={(e) =>
+            setOriginQuery((e.currentTarget as HTMLInputElement).value)
+          }
+        />
+        {filteredOrigins.length === 0 ? (
+          <p class="m-0 text-xs" style="color: var(--text)">
+            No matches for "{originQuery}".
+          </p>
+        ) : (
+          <ul class="list-none m-0 p-0 flex flex-col gap-1">
+            {filteredOrigins.map((a) => (
+              <li key={a.icao}>
+                <label
+                  class="flex items-center gap-2 text-sm cursor-pointer leading-tight"
+                  style="color: var(--text-h)"
+                >
+                  <input
+                    type="checkbox"
+                    class="cursor-pointer shrink-0"
+                    checked={selectedIcaos.has(a.icao)}
+                    onChange={() => toggleOrigin(a.icao)}
+                  />
+                  <span>{a.city}</span>
+                  <span
+                    class="ml-auto text-xs font-mono"
+                    style="color: var(--text)"
+                  >
+                    {a.iata}
+                  </span>
+                </label>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
       {flightData && allOperators.length > 0 && (
-        <div class="sidebar-section">
-          <div class="sidebar-section-head">
-            <h4>Airlines</h4>
+        <div class="flex flex-col gap-1.5">
+          <div class="flex items-baseline justify-between gap-2">
+            <h4
+              class="text-xs font-semibold m-0 uppercase tracking-wide"
+              style="color: var(--text)"
+            >
+              Airlines
+            </h4>
             {hiddenOperators.size > 0 && (
               <button
                 type="button"
-                class="sidebar-clear"
+                class="bg-transparent border-0 p-0 text-xs cursor-pointer hover:underline"
+                style="color: var(--accent)"
                 onClick={() => setHiddenOperators(new Set())}
               >
                 Show all
               </button>
             )}
           </div>
-          <ul class="sidebar-list">
+          <ul class="list-none m-0 p-0 flex flex-col gap-1">
             {allOperators.map((op) => (
               <li key={op}>
-                <label>
+                <label
+                  class="flex items-center gap-2 text-sm cursor-pointer leading-tight"
+                  style="color: var(--text-h)"
+                >
                   <input
                     type="checkbox"
+                    class="cursor-pointer shrink-0"
                     checked={!hiddenOperators.has(op)}
                     onChange={() => toggleOperator(op)}
                   />
                   <span
-                    class="sidebar-swatch"
+                    class="w-2.5 h-2.5 rounded-full shrink-0"
                     style={{ background: colorForOperator(op) }}
                     aria-hidden="true"
                   />
@@ -129,13 +263,19 @@ export function Sidebar({
       )}
 
       {flightData && allDests.length > 0 && (
-        <div class="sidebar-section">
-          <div class="sidebar-section-head">
-            <h4>Destinations</h4>
+        <div class="flex flex-col gap-1.5">
+          <div class="flex items-baseline justify-between gap-2">
+            <h4
+              class="text-xs font-semibold m-0 uppercase tracking-wide"
+              style="color: var(--text)"
+            >
+              Destinations
+            </h4>
             {hiddenDests.size > 0 && (
               <button
                 type="button"
-                class="sidebar-clear"
+                class="bg-transparent border-0 p-0 text-xs cursor-pointer hover:underline"
+                style="color: var(--accent)"
                 onClick={() => setHiddenDests(new Set())}
               >
                 Show all
@@ -144,25 +284,39 @@ export function Sidebar({
           </div>
           <input
             type="search"
-            class="sidebar-search"
+            class="w-full box-border text-sm rounded px-2 py-1.5 mb-1 border"
+            style="color: var(--text-h); background: var(--code-bg); border-color: var(--border)"
             placeholder="Search city or IATA…"
             value={destQuery}
-            onInput={(e) => setDestQuery((e.currentTarget as HTMLInputElement).value)}
+            onInput={(e) =>
+              setDestQuery((e.currentTarget as HTMLInputElement).value)
+            }
           />
           {filteredDests.length === 0 ? (
-            <p class="sidebar-empty">No matches for “{destQuery}”.</p>
+            <p class="m-0 text-xs" style="color: var(--text)">
+              No matches for "{destQuery}".
+            </p>
           ) : (
-            <ul class="sidebar-list">
+            <ul class="list-none m-0 p-0 flex flex-col gap-1">
               {filteredDests.map((d) => (
                 <li key={d.code}>
-                  <label>
+                  <label
+                    class="flex items-center gap-2 text-sm cursor-pointer leading-tight"
+                    style="color: var(--text-h)"
+                  >
                     <input
                       type="checkbox"
+                      class="cursor-pointer shrink-0"
                       checked={!hiddenDests.has(d.code)}
                       onChange={() => toggleDest(d.code)}
                     />
                     <span>{d.city}</span>
-                    <span class="sidebar-iata">{d.code}</span>
+                    <span
+                      class="ml-auto text-xs font-mono"
+                      style="color: var(--text)"
+                    >
+                      {d.code}
+                    </span>
                   </label>
                 </li>
               ))}
@@ -170,12 +324,6 @@ export function Sidebar({
           )}
         </div>
       )}
-
-      {!flightData && (
-        <p class="sidebar-empty">
-          Select an airport to filter its airlines and destinations.
-        </p>
-      )}
     </aside>
-  )
+  );
 }
