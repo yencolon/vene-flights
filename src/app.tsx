@@ -15,7 +15,7 @@ export function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div class="flex flex-col md:flex-row h-screen w-screen overflow-hidden">
+    <div class="flex flex-col md:flex-row h-[100dvh] w-screen overflow-hidden">
       <Sidebar
         selectedIcaos={selectedIcaos}
         setSelectedIcaos={setSelectedIcaos}
@@ -34,30 +34,30 @@ export function App() {
         isOpen={isSidebarOpen}
         onClose={() => setIsSidebarOpen(false)}
       />
-      <main class="flex-1 flex flex-col relative min-h-0">
-        <header class="shrink-0 text-center py-3 md:py-6 px-4 relative">
+      <main class="flex-1 flex flex-col relative h-[100dvh]">
+        <header class="shrink-0 text-center py-3 md:py-6 px-4 relative bg-transparent z-10 pointer-events-none">
           <h1
-            class="text-2xl md:text-4xl font-medium mb-1 md:mb-2"
+            class="text-2xl md:text-4xl font-medium mb-1 md:mb-2 pointer-events-auto"
             style="color: var(--text-h)"
           >
             Vene Flights
           </h1>
           <p
-            class="text-xs md:text-base text-balance mx-auto max-w-[80%]"
+            class="text-xs md:text-base text-balance mx-auto max-w-[80%] pointer-events-auto"
             style="color: var(--text)"
           >
             Click an airport to see its routes. The map zooms out to fit
             international destinations.
           </p>
           <button
-            class="md:hidden absolute top-4 right-4 bg-transparent border px-3 py-1.5 rounded-full text-xs font-semibold cursor-pointer z-10 shadow-sm"
-            style="color: var(--text-h); border-color: var(--border); background: var(--code-bg);"
+            class="md:hidden absolute top-4 right-4 bg-transparent border px-3 py-1.5 rounded-full text-xs font-semibold cursor-pointer z-50 pointer-events-auto shadow-sm"
+            style="color: var(--text-h); border-color: var(--border); background: var(--bg);"
             onClick={() => setIsSidebarOpen(true)}
           >
             Filters
           </button>
         </header>
-        <div class="flex-1 flex items-center justify-center relative overflow-hidden">
+        <div class="flex-1 flex items-center justify-center relative overflow-hidden min-h-0">
           <VenezuelaMap
             selectedIcaos={selectedIcaos}
             setSelectedIcaos={setSelectedIcaos}
