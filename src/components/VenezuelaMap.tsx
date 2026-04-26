@@ -610,223 +610,288 @@ export function VenezuelaMap({
 
   return (
     <figure class="map-figure">
-      {selectedIcaos.size > 0 && (
-        <button
-          type="button"
-          class="map-back-btn"
-          onClick={() => {
-            setSelectedIcaos(new Set());
-            setHoveredDestCode(null);
-          }}
-        >
-          ← Clear Selection
-        </button>
-      )}
-
-      <div class="map-zoom-controls" role="group" aria-label="Zoom">
-        <button
-          type="button"
-          class="map-zoom-btn"
-          aria-label="Zoom in"
-          onClick={() => applyZoom(1.4, CX, CY)}
-        >
-          +
-        </button>
-        <button
-          type="button"
-          class="map-zoom-btn"
-          aria-label="Zoom out"
-          onClick={() => applyZoom(1 / 1.4, CX, CY)}
-        >
-          −
-        </button>
-        <button
-          type="button"
-          class="map-zoom-btn"
-          aria-label="Reset zoom"
-          disabled={zoomXform.s === 1 && zoomXform.x === 0 && zoomXform.y === 0}
-          onClick={() => setZoomXform({ s: 1, x: 0, y: 0 })}
-        >
-          ⌂
-        </button>
-      </div>
-
-      <svg
-        ref={svgRef}
-        class={`venezuela-map${projector.isGlobe ? " is-globe" : ""}`}
-        viewBox={`0 0 ${VIEW} ${VIEW}`}
-        role="img"
-        aria-label={
-          selectedIcaos.size > 0
-            ? `Routes from ${selectedIcaos.size} selected airport${selectedIcaos.size > 1 ? "s" : ""}`
-            : "Map of Venezuela showing major airports"
-        }
-        onClick={() => setSelectedDestCode(null)}
-      >
-        <defs>
-          <clipPath id="globe-clip">
-            <circle
-              cx={CX}
-              cy={CY}
-              r={projector.R}
-              transform={`translate(${zoomXform.x} ${zoomXform.y}) scale(${zoomXform.s})`}
-            />
-          </clipPath>
-        </defs>
-
-        <rect
-          x={0}
-          y={0}
-          width={VIEW}
-          height={VIEW}
-          class="drag-bg"
-          onPointerDown={(e) => {
-            e.currentTarget.setPointerCapture(e.pointerId);
-            dragRef.current = {
-              x: e.clientX,
-              y: e.clientY,
-              baseLon: rotation[0],
-              baseLat: rotation[1],
-              baseZoomX: zoomXform.x,
-              baseZoomY: zoomXform.y,
-              pointerId: e.pointerId,
-              moved: false,
-              isGlobeMode: projector.isGlobe && zoomXform.s < 2.5,
-            };
-          }}
-          onPointerMove={(e) => {
-            const drag = dragRef.current;
-            if (!drag) return;
-            const rect = e.currentTarget.getBoundingClientRect();
-            const scale = VIEW / rect.width;
-            const dx = (e.clientX - drag.x) * scale;
-            const dy = (e.clientY - drag.y) * scale;
-            if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
-
-            if (drag.isGlobeMode) {
-              // Globe mode: rotate the projection
-              const degPerPx = 180 / Math.PI / projector.R / zoomXform.s;
-              const baseLat = selectedAirport?.lat ?? 0;
-              let newLon = drag.baseLon - dx * degPerPx;
-              let newLatOffset = drag.baseLat + dy * degPerPx;
-              const clampedLat = Math.max(
-                -85,
-                Math.min(85, baseLat + newLatOffset),
-              );
-              newLatOffset = clampedLat - baseLat;
-              newLon = ((newLon + 540) % 360) - 180;
-              setRotation([newLon, newLatOffset]);
-            } else {
-              // Flat mode: pan by adjusting zoom transform
-              setZoomXform({
-                s: zoomXform.s,
-                x: drag.baseZoomX + dx,
-                y: drag.baseZoomY + dy,
-              });
-            }
-          }}
-          onPointerUp={(e) => {
-            const drag = dragRef.current;
-            if (!drag) return;
-            if (e.currentTarget.hasPointerCapture(drag.pointerId)) {
-              e.currentTarget.releasePointerCapture(drag.pointerId);
-            }
-            if (drag.moved) {
-              const suppress = (ev: MouseEvent) => {
-                ev.stopPropagation();
-                window.removeEventListener("click", suppress, true);
-              };
-              window.addEventListener("click", suppress, true);
-            }
-            dragRef.current = null;
-          }}
-          onPointerCancel={(e) => {
-            const drag = dragRef.current;
-            if (!drag) return;
-            if (e.currentTarget.hasPointerCapture(drag.pointerId)) {
-              e.currentTarget.releasePointerCapture(drag.pointerId);
-            }
-            dragRef.current = null;
-          }}
-        />
-
-        <g clip-path="url(#globe-clip)">
-          <g
-            transform={`translate(${zoomXform.x} ${zoomXform.y}) scale(${zoomXform.s})`}
+      <div class="map-container relative flex-1 flex flex-col items-center justify-center w-full h-full overflow-hidden">
+        {selectedIcaos.size > 0 && (
+          <button
+            type="button"
+            class="map-back-btn"
+            onClick={() => {
+              setSelectedIcaos(new Set());
+              setHoveredDestCode(null);
+            }}
           >
-            {worldPath && <path d={worldPath} class="world-country" />}
-            <path d={venezuelaPath} class="country" fill-rule="evenodd" />
+            ← Clear Selection
+          </button>
+        )}
 
-            {/* Draw routes from each selected airport */}
-            {Array.from(selectedIcaos).flatMap((icao) => {
-              const airport = airports.find((a) => a.icao === icao);
-              if (!airport) return [];
-              const airportData = flightsByIcao[icao];
-              if (!airportData) return [];
+        <div class="map-zoom-controls" role="group" aria-label="Zoom">
+          <button
+            type="button"
+            class="map-zoom-btn"
+            aria-label="Zoom in"
+            onClick={() => applyZoom(1.4, CX, CY)}
+          >
+            +
+          </button>
+          <button
+            type="button"
+            class="map-zoom-btn"
+            aria-label="Zoom out"
+            onClick={() => applyZoom(1 / 1.4, CX, CY)}
+          >
+            −
+          </button>
+          <button
+            type="button"
+            class="map-zoom-btn"
+            aria-label="Reset zoom"
+            disabled={
+              zoomXform.s === 1 && zoomXform.x === 0 && zoomXform.y === 0
+            }
+            onClick={() => setZoomXform({ s: 1, x: 0, y: 0 })}
+          >
+            ⌂
+          </button>
+        </div>
 
-              const filteredDests = airportData.destinations
-                .filter((d) => !hiddenDests.has(d.airport_code))
-                .map((d) => ({
-                  ...d,
-                  flights: d.flights.filter(
-                    (l) => !hiddenOperators.has(l.operator),
-                  ),
-                }))
-                .filter((d) => d.flights.length > 0);
+        <svg
+          ref={svgRef}
+          class={`venezuela-map${projector.isGlobe ? " is-globe" : ""}`}
+          viewBox={`0 0 ${VIEW} ${VIEW}`}
+          role="img"
+          aria-label={
+            selectedIcaos.size > 0
+              ? `Routes from ${selectedIcaos.size} selected airport${selectedIcaos.size > 1 ? "s" : ""}`
+              : "Map of Venezuela showing major airports"
+          }
+          onClick={() => setSelectedDestCode(null)}
+        >
+          <defs>
+            <clipPath id="globe-clip">
+              <circle
+                cx={CX}
+                cy={CY}
+                r={projector.R}
+                transform={`translate(${zoomXform.x} ${zoomXform.y}) scale(${zoomXform.s})`}
+              />
+            </clipPath>
+          </defs>
 
-              return filteredDests.map((dest) => {
+          <rect
+            x={0}
+            y={0}
+            width={VIEW}
+            height={VIEW}
+            class="drag-bg"
+            onPointerDown={(e) => {
+              e.currentTarget.setPointerCapture(e.pointerId);
+              dragRef.current = {
+                x: e.clientX,
+                y: e.clientY,
+                baseLon: rotation[0],
+                baseLat: rotation[1],
+                baseZoomX: zoomXform.x,
+                baseZoomY: zoomXform.y,
+                pointerId: e.pointerId,
+                moved: false,
+                isGlobeMode: projector.isGlobe && zoomXform.s < 2.5,
+              };
+            }}
+            onPointerMove={(e) => {
+              const drag = dragRef.current;
+              if (!drag) return;
+              const rect = e.currentTarget.getBoundingClientRect();
+              const scale = VIEW / rect.width;
+              const dx = (e.clientX - drag.x) * scale;
+              const dy = (e.clientY - drag.y) * scale;
+              if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
+
+              if (drag.isGlobeMode) {
+                // Globe mode: rotate the projection
+                const degPerPx = 180 / Math.PI / projector.R / zoomXform.s;
+                const baseLat = selectedAirport?.lat ?? 0;
+                let newLon = drag.baseLon - dx * degPerPx;
+                let newLatOffset = drag.baseLat + dy * degPerPx;
+                const clampedLat = Math.max(
+                  -85,
+                  Math.min(85, baseLat + newLatOffset),
+                );
+                newLatOffset = clampedLat - baseLat;
+                newLon = ((newLon + 540) % 360) - 180;
+                setRotation([newLon, newLatOffset]);
+              } else {
+                // Flat mode: pan by adjusting zoom transform
+                setZoomXform({
+                  s: zoomXform.s,
+                  x: drag.baseZoomX + dx,
+                  y: drag.baseZoomY + dy,
+                });
+              }
+            }}
+            onPointerUp={(e) => {
+              const drag = dragRef.current;
+              if (!drag) return;
+              if (e.currentTarget.hasPointerCapture(drag.pointerId)) {
+                e.currentTarget.releasePointerCapture(drag.pointerId);
+              }
+              if (drag.moved) {
+                const suppress = (ev: MouseEvent) => {
+                  ev.stopPropagation();
+                  window.removeEventListener("click", suppress, true);
+                };
+                window.addEventListener("click", suppress, true);
+              }
+              dragRef.current = null;
+            }}
+            onPointerCancel={(e) => {
+              const drag = dragRef.current;
+              if (!drag) return;
+              if (e.currentTarget.hasPointerCapture(drag.pointerId)) {
+                e.currentTarget.releasePointerCapture(drag.pointerId);
+              }
+              dragRef.current = null;
+            }}
+          />
+
+          <g clip-path="url(#globe-clip)">
+            <g
+              transform={`translate(${zoomXform.x} ${zoomXform.y}) scale(${zoomXform.s})`}
+            >
+              {worldPath && <path d={worldPath} class="world-country" />}
+              <path d={venezuelaPath} class="country" fill-rule="evenodd" />
+
+              {/* Draw routes from each selected airport */}
+              {Array.from(selectedIcaos).flatMap((icao) => {
+                const airport = airports.find((a) => a.icao === icao);
+                if (!airport) return [];
+                const airportData = flightsByIcao[icao];
+                if (!airportData) return [];
+
+                const filteredDests = airportData.destinations
+                  .filter((d) => !hiddenDests.has(d.airport_code))
+                  .map((d) => ({
+                    ...d,
+                    flights: d.flights.filter(
+                      (l) => !hiddenOperators.has(l.operator),
+                    ),
+                  }))
+                  .filter((d) => d.flights.length > 0);
+
+                return filteredDests.map((dest) => {
+                  const c = destinationCoords[dest.airport_code];
+                  if (!c) return null;
+                  const isActive = activeDestCode === dest.airport_code;
+                  const isDimmed = activeDestCode !== null && !isActive;
+                  const isSelected = selectedDestCode === dest.airport_code;
+                  const segments = greatCircleSegments(
+                    [airport.lon, airport.lat],
+                    [c.lon, c.lat],
+                    projector.project,
+                  );
+                  const cls = ["route-group"];
+                  if (isActive) cls.push("is-active");
+                  if (isDimmed) cls.push("is-dimmed");
+                  if (isSelected) cls.push("is-selected");
+                  // Aggregate legs by operator so that e.g. Avior's many
+                  // effectivity-date entries draw one thicker line, while
+                  // distinct airlines stay on their own parallel tracks.
+                  const opTotals = new Map<string, number>();
+                  for (const leg of dest.flights) {
+                    const prev = opTotals.get(leg.operator) ?? 0;
+                    opTotals.set(
+                      leg.operator,
+                      prev + numericFreq(leg.weekly_frequency),
+                    );
+                  }
+                  const opEntries = [...opTotals.entries()];
+                  let displayEntries = opEntries;
+                  if (consolidateRoutes && opEntries.length > 1) {
+                    // Primary color from operator with most flights
+                    const mainOp = opEntries.reduce((a, b) =>
+                      a[1] > b[1] ? a : b,
+                    )[0];
+                    const totalFreq = opEntries.reduce(
+                      (sum, curr) => sum + curr[1],
+                      0,
+                    );
+                    displayEntries = [[mainOp, totalFreq]];
+                  }
+                  const n = displayEntries.length;
+                  // Spacing between parallel lines, in user-space coords. Capped
+                  // total spread keeps wide bundles from overflowing the map.
+                  const spacing = n > 1 ? Math.min(5, 36 / (n - 1)) : 0;
+                  const baseD = segmentsToPath(segments, 0);
+                  const hitWidth = Math.max(14, (n - 1) * spacing + 14);
+                  return (
+                    <g
+                      key={`route-${icao}-${dest.airport_code}`}
+                      class={cls.join(" ")}
+                      tabIndex={0}
+                      role="button"
+                      aria-label={`Route from ${airport.city} to ${dest.city}`}
+                      aria-pressed={isSelected}
+                      onMouseEnter={() => setHoveredDestCode(dest.airport_code)}
+                      onMouseLeave={() => setHoveredDestCode(null)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        toggleDest(dest.airport_code);
+                      }}
+                      onKeyDown={(e) => {
+                        if (e.key === "Enter" || e.key === " ") {
+                          e.preventDefault();
+                          toggleDest(dest.airport_code);
+                        }
+                      }}
+                    >
+                      <path
+                        d={baseD}
+                        class="route-hit"
+                        style={`stroke-width: ${hitWidth}px`}
+                      />
+                      {displayEntries.map(([operator, total], li) => {
+                        const lw = Math.max(
+                          1.6,
+                          Math.min(4.5, 1.4 + total / 5),
+                        );
+                        const offset = (li - (n - 1) / 2) * spacing;
+                        return (
+                          <path
+                            key={operator}
+                            d={segmentsToPath(segments, offset)}
+                            class="route"
+                            stroke={colorForOperator(operator)}
+                            strokeWidth={isActive ? lw * 1.5 : lw}
+                          />
+                        );
+                      })}
+                    </g>
+                  );
+                });
+              })}
+            </g>
+
+            {/* Markers render outside the zoom transform but inside the clip
+              so dot radii stay constant — and shrink as zoom increases.
+              dotScale (1/sqrt(zoom)) is published as the --m CSS var so
+              hover/selected states can stay proportional to the base size. */}
+            {filteredFlightData &&
+              filteredFlightData.destinations.map((dest) => {
                 const c = destinationCoords[dest.airport_code];
                 if (!c) return null;
+                const raw = projector.project(c.lon, c.lat);
+                if (!raw.visible) return null;
+                const px = zoomXform.s * raw.x + zoomXform.x;
+                const py = zoomXform.s * raw.y + zoomXform.y;
                 const isActive = activeDestCode === dest.airport_code;
-                const isDimmed = activeDestCode !== null && !isActive;
                 const isSelected = selectedDestCode === dest.airport_code;
-                const segments = greatCircleSegments(
-                  [airport.lon, airport.lat],
-                  [c.lon, c.lat],
-                  projector.project,
-                );
-                const cls = ["route-group"];
-                if (isActive) cls.push("is-active");
-                if (isDimmed) cls.push("is-dimmed");
+                const cls = ["destination-marker"];
+                if (isActive) cls.push("is-hovered");
                 if (isSelected) cls.push("is-selected");
-                // Aggregate legs by operator so that e.g. Avior's many
-                // effectivity-date entries draw one thicker line, while
-                // distinct airlines stay on their own parallel tracks.
-                const opTotals = new Map<string, number>();
-                for (const leg of dest.flights) {
-                  const prev = opTotals.get(leg.operator) ?? 0;
-                  opTotals.set(
-                    leg.operator,
-                    prev + numericFreq(leg.weekly_frequency),
-                  );
-                }
-                const opEntries = [...opTotals.entries()];
-                let displayEntries = opEntries;
-                if (consolidateRoutes && opEntries.length > 1) {
-                  // Primary color from operator with most flights
-                  const mainOp = opEntries.reduce((a, b) =>
-                    a[1] > b[1] ? a : b,
-                  )[0];
-                  const totalFreq = opEntries.reduce(
-                    (sum, curr) => sum + curr[1],
-                    0,
-                  );
-                  displayEntries = [[mainOp, totalFreq]];
-                }
-                const n = displayEntries.length;
-                // Spacing between parallel lines, in user-space coords. Capped
-                // total spread keeps wide bundles from overflowing the map.
-                const spacing = n > 1 ? Math.min(5, 36 / (n - 1)) : 0;
-                const baseD = segmentsToPath(segments, 0);
-                const hitWidth = Math.max(14, (n - 1) * spacing + 14);
                 return (
                   <g
-                    key={`route-${icao}-${dest.airport_code}`}
+                    key={`dest-${dest.airport_code}`}
                     class={cls.join(" ")}
-                    tabIndex={0}
-                    role="button"
-                    aria-label={`Route from ${airport.city} to ${dest.city}`}
-                    aria-pressed={isSelected}
+                    style={`--m: ${dotScale}`}
                     onMouseEnter={() => setHoveredDestCode(dest.airport_code)}
                     onMouseLeave={() => setHoveredDestCode(null)}
                     onClick={(e) => {
@@ -839,141 +904,83 @@ export function VenezuelaMap({
                         toggleDest(dest.airport_code);
                       }
                     }}
+                    tabIndex={0}
+                    role="button"
+                    aria-pressed={isSelected}
+                    aria-label={`${dest.city} (${dest.airport_code})`}
                   >
-                    <path
-                      d={baseD}
-                      class="route-hit"
-                      style={`stroke-width: ${hitWidth}px`}
-                    />
-                    {displayEntries.map(([operator, total], li) => {
-                      const lw = Math.max(1.6, Math.min(4.5, 1.4 + total / 5));
-                      const offset = (li - (n - 1) / 2) * spacing;
-                      return (
-                        <path
-                          key={operator}
-                          d={segmentsToPath(segments, offset)}
-                          class="route"
-                          stroke={colorForOperator(operator)}
-                          strokeWidth={isActive ? lw * 1.5 : lw}
-                        />
-                      );
-                    })}
+                    <circle cx={px} cy={py} r={8} class="destination-hit" />
+                    <circle cx={px} cy={py} class="destination-dot" />
+                    {(showLabels || isActive) && (
+                      <text
+                        x={px + 7 * dotScale}
+                        y={py - 6 * dotScale}
+                        class="destination-label"
+                      >
+                        {dest.city}
+                      </text>
+                    )}
                   </g>
                 );
-              });
-            })}
-          </g>
+              })}
 
-          {/* Markers render outside the zoom transform but inside the clip
-              so dot radii stay constant — and shrink as zoom increases.
-              dotScale (1/sqrt(zoom)) is published as the --m CSS var so
-              hover/selected states can stay proportional to the base size. */}
-          {filteredFlightData &&
-            filteredFlightData.destinations.map((dest) => {
-              const c = destinationCoords[dest.airport_code];
-              if (!c) return null;
-              const raw = projector.project(c.lon, c.lat);
+            {visibleAirports.map((airport) => {
+              const raw = projector.project(airport.lon, airport.lat);
               if (!raw.visible) return null;
               const px = zoomXform.s * raw.x + zoomXform.x;
               const py = zoomXform.s * raw.y + zoomXform.y;
-              const isActive = activeDestCode === dest.airport_code;
-              const isSelected = selectedDestCode === dest.airport_code;
-              const cls = ["destination-marker"];
-              if (isActive) cls.push("is-hovered");
+              const isHovered = hoveredAirportIcao === airport.icao;
+              const isSelected = selectedIcaos.has(airport.icao);
+              const showLabel = isHovered || (isSelected && !flightData);
+              const cls = ["airport"];
+              if (isHovered) cls.push("is-hovered");
               if (isSelected) cls.push("is-selected");
               return (
                 <g
-                  key={`dest-${dest.airport_code}`}
+                  key={airport.icao}
                   class={cls.join(" ")}
                   style={`--m: ${dotScale}`}
-                  onMouseEnter={() => setHoveredDestCode(dest.airport_code)}
-                  onMouseLeave={() => setHoveredDestCode(null)}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleDest(dest.airport_code);
+                  onMouseEnter={() => setHoveredAirportIcao(airport.icao)}
+                  onMouseLeave={() => setHoveredAirportIcao(null)}
+                  onFocus={() => setHoveredAirportIcao(airport.icao)}
+                  onBlur={() => setHoveredAirportIcao(null)}
+                  onClick={() => {
+                    const next = new Set(selectedIcaos);
+                    if (next.has(airport.icao)) next.delete(airport.icao);
+                    else next.add(airport.icao);
+                    setSelectedIcaos(next);
                   }}
                   onKeyDown={(e) => {
                     if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
-                      toggleDest(dest.airport_code);
+                      const next = new Set(selectedIcaos);
+                      if (next.has(airport.icao)) next.delete(airport.icao);
+                      else next.add(airport.icao);
+                      setSelectedIcaos(next);
                     }
                   }}
                   tabIndex={0}
                   role="button"
                   aria-pressed={isSelected}
-                  aria-label={`${dest.city} (${dest.airport_code})`}
+                  aria-label={`${airport.name}, ${airport.city}`}
                 >
-                  <circle cx={px} cy={py} r={8} class="destination-hit" />
-                  <circle cx={px} cy={py} class="destination-dot" />
-                  {(showLabels || isActive) && (
+                  <circle cx={px} cy={py} r={6} class="airport-hit" />
+                  <circle cx={px} cy={py} class="airport-dot" />
+                  {showLabel && (
                     <text
-                      x={px + 7 * dotScale}
-                      y={py - 6 * dotScale}
-                      class="destination-label"
+                      x={px + 10 * dotScale}
+                      y={py - 8 * dotScale}
+                      class="airport-label"
                     >
-                      {dest.city}
+                      {airport.name} — {airport.city}
                     </text>
                   )}
                 </g>
               );
             })}
-
-          {visibleAirports.map((airport) => {
-            const raw = projector.project(airport.lon, airport.lat);
-            if (!raw.visible) return null;
-            const px = zoomXform.s * raw.x + zoomXform.x;
-            const py = zoomXform.s * raw.y + zoomXform.y;
-            const isHovered = hoveredAirportIcao === airport.icao;
-            const isSelected = selectedIcaos.has(airport.icao);
-            const showLabel = isHovered || (isSelected && !flightData);
-            const cls = ["airport"];
-            if (isHovered) cls.push("is-hovered");
-            if (isSelected) cls.push("is-selected");
-            return (
-              <g
-                key={airport.icao}
-                class={cls.join(" ")}
-                style={`--m: ${dotScale}`}
-                onMouseEnter={() => setHoveredAirportIcao(airport.icao)}
-                onMouseLeave={() => setHoveredAirportIcao(null)}
-                onFocus={() => setHoveredAirportIcao(airport.icao)}
-                onBlur={() => setHoveredAirportIcao(null)}
-                onClick={() => {
-                  const next = new Set(selectedIcaos);
-                  if (next.has(airport.icao)) next.delete(airport.icao);
-                  else next.add(airport.icao);
-                  setSelectedIcaos(next);
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") {
-                    e.preventDefault();
-                    const next = new Set(selectedIcaos);
-                    if (next.has(airport.icao)) next.delete(airport.icao);
-                    else next.add(airport.icao);
-                    setSelectedIcaos(next);
-                  }
-                }}
-                tabIndex={0}
-                role="button"
-                aria-pressed={isSelected}
-                aria-label={`${airport.name}, ${airport.city}`}
-              >
-                <circle cx={px} cy={py} r={6} class="airport-hit" />
-                <circle cx={px} cy={py} class="airport-dot" />
-                {showLabel && (
-                  <text
-                    x={px + 10 * dotScale}
-                    y={py - 8 * dotScale}
-                    class="airport-label"
-                  >
-                    {airport.name} — {airport.city}
-                  </text>
-                )}
-              </g>
-            );
-          })}
-        </g>
-      </svg>
+          </g>
+        </svg>
+      </div>
 
       {selectedAirport && (
         <div class="map-hud" aria-live="polite">

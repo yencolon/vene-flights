@@ -133,7 +133,10 @@ export function Sidebar({
       role="region"
       aria-label="Filters"
     >
-      <div class="flex items-baseline justify-between gap-2">
+      <div
+        class="flex items-baseline justify-between gap-2 sticky -top-4 md:top-0 -mt-4 -mx-4 md:m-0 p-4 md:p-0 z-10 border-b md:border-0 md:static"
+        style="background: var(--bg); border-color: var(--border)"
+      >
         <h3
           class="text-xl md:text-sm font-semibold m-0"
           style="color: var(--text-h)"
