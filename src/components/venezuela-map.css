@@ -414,9 +414,22 @@
   font-style: italic;
 }
 
+.hud-drag-handle {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .map-figure {
     padding: 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+  }
+  .venezuela-map {
+    flex: 1 1 50%;
+    width: 100%;
+    min-height: 0;
   }
   .map-back-btn {
     top: 16px;
@@ -424,12 +437,20 @@
   }
   .map-zoom-controls {
     bottom: 16px;
+    /* adjust left so it is placed appropriately */
     left: 16px;
   }
   .map-hud {
     position: static;
     width: 100%;
-    margin-top: 12px;
+    flex: 1 1 50%;
+    margin: 0;
     max-height: none;
+    overflow-y: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .map-hud.is-expanded {
+    /* REMOVED: No more expanding state on mobile, it just shares the screen via flex */
   }
 }

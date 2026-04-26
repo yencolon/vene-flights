@@ -1033,9 +1033,45 @@ export function VenezuelaMap({
                   <span>upcoming</span>
                 </div>
               </div>
-              <p class="hud-hint">
-                Hover a route or click one to lock its details.
-              </p>
+
+              <div class="hud-all-destinations mt-4 flex flex-col gap-4 overflow-y-auto">
+                {filteredFlightData.destinations.map((dest) => (
+                  <div
+                    key={dest.airport_code}
+                    class="border-t border-dashed pt-3"
+                    style="border-color: var(--border);"
+                  >
+                    <div class="hud-title text-sm mb-2 justify-start gap-2">
+                      <span>{dest.city}</span>
+                      <span class="iata-pill">{dest.airport_code}</span>
+                    </div>
+                    <ul class="hud-legs">
+                      {dest.flights.map((leg, i) => (
+                        <li key={i}>
+                          <div class="hud-leg-row">
+                            <span class="hud-operator">
+                              <span
+                                class="hud-operator-color"
+                                style={{
+                                  background: colorForOperator(leg.operator),
+                                }}
+                                aria-hidden="true"
+                              />
+                              {leg.operator}
+                            </span>
+                            <span class="hud-freq">
+                              {formatFrequency(leg.weekly_frequency)}
+                            </span>
+                          </div>
+                          {leg.notes && (
+                            <div class="hud-notes">{leg.notes}</div>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
             </>
           ) : (
             <>

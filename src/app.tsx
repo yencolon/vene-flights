@@ -12,9 +12,10 @@ export function App() {
   const [consolidateRoutes, setConsolidateRoutes] = useState(true);
   const [destQuery, setDestQuery] = useState("");
   const [originQuery, setOriginQuery] = useState("");
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div class="flex h-screen w-screen overflow-hidden">
+    <div class="flex flex-col md:flex-row h-screen w-screen overflow-hidden">
       <Sidebar
         selectedIcaos={selectedIcaos}
         setSelectedIcaos={setSelectedIcaos}
@@ -30,16 +31,31 @@ export function App() {
         setDestQuery={setDestQuery}
         originQuery={originQuery}
         setOriginQuery={setOriginQuery}
+        isOpen={isSidebarOpen}
+        onClose={() => setIsSidebarOpen(false)}
       />
-      <main class="flex-1 flex flex-col">
-        <header class="shrink-0 text-center py-6 px-4">
-          <h1 class="text-4xl font-medium mb-2" style="color: var(--text-h)">
+      <main class="flex-1 flex flex-col relative min-h-0">
+        <header class="shrink-0 text-center py-3 md:py-6 px-4 relative">
+          <h1
+            class="text-2xl md:text-4xl font-medium mb-1 md:mb-2"
+            style="color: var(--text-h)"
+          >
             Vene Flights
           </h1>
-          <p class="text-base" style="color: var(--text)">
+          <p
+            class="text-xs md:text-base text-balance mx-auto max-w-[80%]"
+            style="color: var(--text)"
+          >
             Click an airport to see its routes. The map zooms out to fit
             international destinations.
           </p>
+          <button
+            class="md:hidden absolute top-4 right-4 bg-transparent border px-3 py-1.5 rounded-full text-xs font-semibold cursor-pointer z-10 shadow-sm"
+            style="color: var(--text-h); border-color: var(--border); background: var(--code-bg);"
+            onClick={() => setIsSidebarOpen(true)}
+          >
+            Filters
+          </button>
         </header>
         <div class="flex-1 flex items-center justify-center relative overflow-hidden">
           <VenezuelaMap
