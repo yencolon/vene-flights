@@ -1,0 +1,146 @@
+[
+    {
+        "origin": "Valencia",
+        "destination": "Maracaibo",
+        "operator": "Turpial",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": "09:00 - 10:00 | Days: Tuesday, Saturday | Semana Flexible"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": "11:00 - 12:00 | Days: Tuesday, Saturday | Semana Flexible"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Porlamar",
+        "operator": "Turpial",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": "10:00 - 11:00 | Days: Tuesday, Thursday"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": "12:00 - 13:00 | Days: Tuesday, Thursday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Porlamar",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": "14:30 - 15:30 | Days: Sunday"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": "16:30 - 17:30 | Days: Sunday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Panamá",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "08:00 - 09:00 | Days: Wednesday"
+    },
+    {
+        "origin": "Panamá",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "10:00 - 13:00 | Days: Wednesday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Panamá",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "10:00 - 11:00 | Days: Sunday"
+    },
+    {
+        "origin": "Panamá",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "12:00 - 15:00 | Days: Sunday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Santo Domingo",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "15:30 - 17:00 | Days: Monday"
+    },
+    {
+        "origin": "Santo Domingo",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "18:00 - 19:30 | Days: Monday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Santo Domingo",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "11:00 - 12:30 | Days: Wednesday"
+    },
+    {
+        "origin": "Santo Domingo",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "14:00 - 15:30 | Days: Wednesday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Santo Domingo",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "11:00 - 12:30 | Days: Friday"
+    },
+    {
+        "origin": "Santo Domingo",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "14:00 - 15:30 | Days: Friday"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Cancun",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "10:00 - 12:30 | Days: Saturday"
+    },
+    {
+        "origin": "Cancun",
+        "destination": "Valencia",
+        "operator": "Turpial",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": "13:30 - 18:00 | Days: Saturday"
+    }
+]

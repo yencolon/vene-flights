@@ -1,0 +1,226 @@
+[
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Laser (QL 902)",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Laser (QL 903)",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Laser (QL 904)",
+        "weekly_frequency": 6,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Laser (QL 905)",
+        "weekly_frequency": 6,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Laser (QL 906)",
+        "weekly_frequency": 6,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Laser (QL 907)",
+        "weekly_frequency": 5,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Laser (QL 908)",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Laser (QL 909)",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Puerto Ordaz",
+        "operator": "Laser (QL 1950)",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Porlamar",
+        "operator": "Laser (QL 1951)",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maracaibo",
+        "operator": "Laser (QL 942)",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Caracas",
+        "operator": "Laser (QL 943)",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "El Vigía",
+        "operator": "Laser (QL 920)",
+        "weekly_frequency": 6,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "El Vigía",
+        "destination": "Caracas",
+        "operator": "Laser (QL 921)",
+        "weekly_frequency": 6,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barcelona",
+        "operator": "Laser (QL 970)",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Barcelona",
+        "destination": "Caracas",
+        "operator": "Laser (QL 971)",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "La Fría",
+        "operator": "Laser (QL 930)",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "La Fría",
+        "destination": "Caracas",
+        "operator": "Laser (QL 931)",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Madrid",
+        "operator": "Laser (QL 2920)",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Madrid",
+        "destination": "Caracas",
+        "operator": "Laser (QL 2921)",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Bogotá",
+        "operator": "Laser (QL 2980)",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Bogotá",
+        "destination": "Caracas",
+        "operator": "Laser (QL 2981)",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Curaçao",
+        "operator": "Laser (QL 2930)",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Curaçao",
+        "destination": "Caracas",
+        "operator": "Laser (QL 2931)",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Conexión posterior",
+        "operator": "Laser (G6 201)",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Conexión posterior",
+        "destination": "Caracas",
+        "operator": "Laser (G6 200)",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Santo Domingo",
+        "operator": "Laser (QL 2968)",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": ""
+    },
+    {
+        "origin": "Santo Domingo",
+        "destination": "Caracas",
+        "operator": "Laser (QL 2969)",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": ""
+    }
+]

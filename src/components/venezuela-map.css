@@ -1,0 +1,418 @@
+.map-figure {
+  margin: 0;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.venezuela-map {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  overflow: visible;
+}
+
+.sea {
+  fill: transparent;
+}
+
+.world-country {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 0.8;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.globe-sea {
+  fill: var(--code-bg);
+}
+
+.globe-rim {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.venezuela-map.is-globe .country {
+  fill: none;
+  stroke-width: 1;
+}
+
+.drag-bg {
+  fill: transparent;
+  pointer-events: all;
+  cursor: grab;
+  touch-action: none;
+}
+
+.drag-bg:active {
+  cursor: grabbing;
+}
+
+.world-country {
+  pointer-events: none;
+}
+
+.country {
+  fill: var(--accent-bg);
+  stroke: var(--accent);
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ---------- Venezuelan airports ---------- */
+
+.airport {
+  cursor: pointer;
+  outline: none;
+}
+
+.airport-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 12;
+  pointer-events: stroke;
+}
+
+.airport-dot {
+  fill: var(--accent);
+  stroke: var(--bg);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  transition: r 0.15s ease, fill 0.15s ease;
+  pointer-events: none;
+  /* --m is set per-marker by the component (1/sqrt(zoom)). */
+  r: calc(4px * var(--m, 1));
+}
+
+.airport.is-hovered .airport-dot,
+.airport:focus-visible .airport-dot {
+  r: calc(6.5px * var(--m, 1));
+  fill: var(--text-h);
+}
+
+.airport.is-selected .airport-dot {
+  r: calc(7px * var(--m, 1));
+  fill: var(--accent);
+  stroke: var(--bg);
+  stroke-width: 3;
+}
+
+.airport-label {
+  fill: var(--text-h);
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 500;
+  paint-order: stroke fill;
+  stroke: var(--bg);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+/* ---------- Routes ---------- */
+
+.route-group {
+  cursor: pointer;
+  outline: none;
+}
+
+.route-hit {
+  fill: none;
+  stroke: transparent;
+  /* Width is set inline per-route to cover the parallel-lines bundle.
+     Scales with zoom so the click area always tracks the visible spread. */
+  pointer-events: stroke;
+}
+
+.route {
+  fill: none;
+  stroke-linecap: round;
+  opacity: 0.78;
+  vector-effect: non-scaling-stroke;
+  transition: opacity 0.15s ease, stroke-width 0.15s ease;
+  pointer-events: none;
+}
+
+.route-group.is-dimmed .route {
+  opacity: 0.18;
+}
+
+.route-group.is-active .route,
+.route-group:focus-visible .route {
+  opacity: 1;
+}
+
+.route-group.is-selected .route {
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.35));
+}
+
+/* ---------- Destination markers ---------- */
+
+.destination-marker {
+  cursor: pointer;
+  outline: none;
+}
+
+.destination-hit {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 16;
+  pointer-events: all;
+}
+
+.destination-dot {
+  fill: var(--bg);
+  stroke: var(--accent);
+  stroke-width: 1.8;
+  vector-effect: non-scaling-stroke;
+  transition: r 0.15s ease, fill 0.15s ease;
+  pointer-events: none;
+  r: calc(3.5px * var(--m, 1));
+}
+
+.destination-marker.is-hovered .destination-dot,
+.destination-marker:focus-visible .destination-dot {
+  r: calc(5.5px * var(--m, 1));
+  fill: var(--accent);
+}
+
+.destination-marker.is-selected .destination-dot {
+  r: calc(6.5px * var(--m, 1));
+  fill: var(--accent);
+  stroke: var(--bg);
+  stroke-width: 3;
+}
+
+.destination-label {
+  fill: var(--text-h);
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 500;
+  paint-order: stroke fill;
+  stroke: var(--bg);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+/* ---------- Back button ---------- */
+
+.map-back-btn {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 2;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--sans);
+  box-shadow: var(--shadow);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.map-back-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ---------- Zoom controls ---------- */
+
+.map-zoom-controls {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px;
+  box-shadow: var(--shadow);
+}
+
+.map-zoom-btn {
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  color: var(--text-h);
+  font-family: var(--sans);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.map-zoom-btn:hover:not(:disabled) {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.map-zoom-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+/* ---------- Floating HUD ---------- */
+
+.map-hud {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  z-index: 2;
+  width: min(320px, calc(100% - 64px));
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow);
+  font-family: var(--sans);
+  max-height: calc(100% - 64px);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.hud-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.iata-pill {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.hud-stats {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.hud-stats > div {
+  flex: 1;
+  background: var(--code-bg);
+  border-radius: 6px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.hud-stats strong {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-h);
+  line-height: 1;
+}
+
+.hud-stats span {
+  font-size: 11px;
+  color: var(--text);
+}
+
+.hud-hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+.hud-legs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hud-legs > li {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.hud-leg-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hud-operator {
+  color: var(--text-h);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.hud-operator-color {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.hud-freq {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.hud-notes {
+  font-size: 11px;
+  color: var(--text);
+  margin-top: 2px;
+  font-style: italic;
+}
+
+@media (max-width: 700px) {
+  .map-figure {
+    padding: 12px;
+  }
+  .map-back-btn { top: 16px; left: 16px; }
+  .map-zoom-controls { bottom: 16px; left: 16px; }
+  .map-hud {
+    position: static;
+    width: 100%;
+    margin-top: 12px;
+    max-height: none;
+  }
+}

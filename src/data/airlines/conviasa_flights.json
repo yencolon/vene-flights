@@ -1,0 +1,930 @@
+[
+    {
+        "origin": "Barcelona (BLA),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1111)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": "INICIA A PARTIR DEL 15 ABRIL"
+    },
+    {
+        "origin": "Barcelona (BLA),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1113)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": "OPERA A PARTIR DEL 15 ABRIL"
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Barcelona (BLA),VENEZUELA",
+        "operator": "Conviasa (1112)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": "OPERA A PARTIR DEL 15 ABRIL"
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Barcelona (BLA),VENEZUELA",
+        "operator": "Conviasa (1110)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": "A PARTRIR DEL 15 ABRIL"
+    },
+    {
+        "origin": "Barinas (BNS),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (075)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Barinas (BNS),VENEZUELA",
+        "operator": "Conviasa (074)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Barquisimeto (BRM),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (101)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Barquisimeto (BRM),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (099)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Barquisimeto (BRM),VENEZUELA",
+        "operator": "Conviasa (100)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Barquisimeto (BRM),VENEZUELA",
+        "operator": "Conviasa (098)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Canaima (CAJ),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (131)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Canaima (CAJ),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1133)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Canaima (CAJ),VENEZUELA",
+        "operator": "Conviasa (1132)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Canaima (CAJ),VENEZUELA",
+        "operator": "Conviasa (130)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Cumana (CUM),VENEZUELA",
+        "operator": "Conviasa (056)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Cumana (CUM),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (057)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "El Vigia (VIG),VENEZUELA",
+        "operator": "Conviasa (080)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "El Vigia (VIG),VENEZUELA",
+        "operator": "Conviasa (078)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "El Vigia (VIG),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (079)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "El Vigia (VIG),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (081)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "La Fria (LFR),VENEZUELA",
+        "operator": "Conviasa (062)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "La Fria (LFR),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (063)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Las Piedras (LSP),VENEZUELA",
+        "operator": "Conviasa (046)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Las Piedras (LSP),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (047)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Los Roques (LRV),VENEZUELA",
+        "operator": "Conviasa (1152)",
+        "weekly_frequency": 7,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Los Roques (LRV),VENEZUELA",
+        "operator": "Conviasa (1154)",
+        "weekly_frequency": 7,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Los Roques (LRV),VENEZUELA",
+        "operator": "Conviasa (1150)",
+        "weekly_frequency": 6,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Los Roques (LRV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1151)",
+        "weekly_frequency": 6,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Los Roques (LRV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1155)",
+        "weekly_frequency": 7,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Los Roques (LRV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1153)",
+        "weekly_frequency": 7,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Maracaibo (MAR),VENEZUELA",
+        "operator": "Conviasa (092)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Maracaibo (MAR),VENEZUELA",
+        "operator": "Conviasa (090)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo (MAR),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (091)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo (MAR),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (093)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Maturin (MUN),VENEZUELA",
+        "operator": "Conviasa (032)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Maturin (MUN),VENEZUELA",
+        "operator": "Conviasa (030)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Maturin (MUN),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (033)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Maturin (MUN),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (031)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (006)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (1012)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (1010)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (002)",
+        "weekly_frequency": 4,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (010)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (009)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (011)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (007)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (003)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (015)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (013)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1017)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Puerto Ayacucho (PYH),VENEZUELA",
+        "operator": "Conviasa (1070)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ayacucho (PYH),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1071)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Puerto Ordaz (PZO),VENEZUELA",
+        "operator": "Conviasa (198)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Puerto Ordaz (PZO),VENEZUELA",
+        "operator": "Conviasa (196)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz (PZO),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (197)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz (PZO),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (199)",
+        "weekly_frequency": 1,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "San Antonio (SVZ),VENEZUELA",
+        "operator": "Conviasa (1186)",
+        "weekly_frequency": 4,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "San Antonio (SVZ),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1189)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "San Antonio (SVZ),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1187)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Santo Domingo (STD),VENEZUELA",
+        "operator": "Conviasa (038)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Santo Domingo (STD),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (039)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS),VENEZUELA",
+        "destination": "Valera (VLV),VENEZUELA",
+        "operator": "Conviasa (1174)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Valera (VLV),VENEZUELA",
+        "destination": "Caracas (CCS),VENEZUELA",
+        "operator": "Conviasa (1175)",
+        "weekly_frequency": 2,
+        "type": "Nacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Barcelona (BLA),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (2279)",
+        "weekly_frequency": 5,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Barcelona (BLA),VENEZUELA",
+        "operator": "Conviasa (2278)",
+        "weekly_frequency": 5,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Barquisimeto (BRM),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (287)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Barquisimeto (BRM),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (289)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Barquisimeto (BRM),VENEZUELA",
+        "operator": "Conviasa (286)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Barquisimeto (BRM),VENEZUELA",
+        "operator": "Conviasa (288)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Barquisimeto (BRM),VENEZUELA",
+        "destination": "San Antonio (SVZ),VENEZUELA",
+        "operator": "Conviasa (2258)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "San Antonio (SVZ),VENEZUELA",
+        "destination": "Barqusimeto (BRM),VENEZUELA",
+        "operator": "Conviasa (2259)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "El Vigia (VIG),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (365)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "El Vigia (VIG),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (363)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "El Vigia (VIG),VENEZUELA",
+        "operator": "Conviasa (362)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "El Vigia (VIG),VENEZUELA",
+        "operator": "Conviasa (364)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "La Fria (LFR),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (347)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "La Fria (LFR),VENEZUELA",
+        "operator": "Conviasa (346)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo (MAR),VENEZUELA",
+        "destination": "Maturin (MUN),VENEZUELA",
+        "operator": "Conviasa (273)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maturin (MUN),VENEZUELA",
+        "destination": "Maracaibo (MAR),VENEZUELA",
+        "operator": "Conviasa (272)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo (MAR),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (307)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo (MAR),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (303)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Maracaibo (MAR),VENEZUELA",
+        "operator": "Conviasa (302)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Maracaibo (MAR),VENEZUELA",
+        "operator": "Conviasa (306)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maracaibo (MAR),VENEZUELA",
+        "destination": "Puerto Ordaz (PZO),VENEZUELA",
+        "operator": "Conviasa (332)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz (PZO),VENEZUELA",
+        "destination": "Maracaibo (MAR),VENEZUELA",
+        "operator": "Conviasa (333)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maturin (MUN),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (2311)",
+        "weekly_frequency": 6,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Maturin (MUN),VENEZUELA",
+        "operator": "Conviasa (2310)",
+        "weekly_frequency": 6,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Maturin (MUN),VENEZUELA",
+        "destination": "Santo Domingo (STD),VENEZUELA",
+        "operator": "Conviasa (2439)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Santo Domingo (STD),VENEZUELA",
+        "destination": "Maturin (MUN),VENEZUELA",
+        "operator": "Conviasa (2438)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Puerto Ordaz (PZO),VENEZUELA",
+        "operator": "Conviasa (322)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz (PZO),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (321)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz (PZO),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (323)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Santo Domingo (STD),VENEZUELA",
+        "operator": "Conviasa (334)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Santo Domingo (STD),VENEZUELA",
+        "operator": "Conviasa (336)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Santo Domingo (STD),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (337)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Santo Domingo (STD),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (335)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Valencia (VLN),VENEZUELA",
+        "operator": "Conviasa (350)",
+        "weekly_frequency": 3,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Valencia (VLN),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (351)",
+        "weekly_frequency": 3,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Porlamar (PMV),VENEZUELA",
+        "destination": "Valera (VLV),VENEZUELA",
+        "operator": "Conviasa (2250)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Valera (VLV),VENEZUELA",
+        "destination": "Porlamar (PMV),VENEZUELA",
+        "operator": "Conviasa (2251)",
+        "weekly_frequency": 2,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Puerto Ordaz (PZO),VENEZUELA",
+        "destination": "Valencia (VLN),VENEZUELA",
+        "operator": "Conviasa (390)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Valencia (VLN),VENEZUELA",
+        "destination": "Puerto Ordaz (PZO),VENEZUELA",
+        "operator": "Conviasa (391)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "San Antonio (SVZ),VENEZUELA",
+        "destination": "Valencia (VLN),VENEZUELA",
+        "operator": "Conviasa (2403)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Valencia (VLN),VENEZUELA",
+        "destination": "San Antonio (SVZ),VENEZUELA",
+        "operator": "Conviasa (2402)",
+        "weekly_frequency": 1,
+        "type": "Interciudad",
+        "notes": ""
+    },
+    {
+        "origin": "Bridgetown (BGI), BARBADOS",
+        "destination": "Caracas (CCS), VENEZUELA",
+        "operator": "Conviasa (3703)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS), VENEZUELA",
+        "destination": "Bridgetown (BGI), VENEZUELA",
+        "operator": "Conviasa (3702)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Cancun (CUN), MEXICO",
+        "destination": "Caracas (CCS), VENEZUELA",
+        "operator": "Conviasa (3739)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS), VENEZUELA",
+        "destination": "Cancun (CUN), MEXICO",
+        "operator": "Conviasa (3736)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS), VENEZUELA",
+        "destination": "La Habana (HAV), CUBA",
+        "operator": "Conviasa (3492)",
+        "weekly_frequency": 2,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS), VENEZUELA",
+        "destination": "La Habana (HAV), CUBA",
+        "operator": "Conviasa (3496)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Habana (HAV), CUBA",
+        "destination": "Caracas (CCS), VENEZUELA",
+        "operator": "Conviasa (3493)",
+        "weekly_frequency": 2,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Habana (HAV), CUBA",
+        "destination": "Caracas (CCS), VENEZUELA",
+        "operator": "Conviasa (3497)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS), VENEZUELA",
+        "destination": "Managua (MGA), NICARAGUA",
+        "operator": "Conviasa (3510)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Managua (MGA), NICARAGUA",
+        "destination": "Caracas (CCS), VENEZUELA",
+        "operator": "Conviasa (3511)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Caracas (CCS), VENEZUELA",
+        "destination": "Santa Lucia (NLU), MEXICO",
+        "operator": "Conviasa (3726)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    },
+    {
+        "origin": "Santa Lucia (NLU), MEXICO",
+        "destination": "Caracas (CCS), VENEZUELA",
+        "operator": "Conviasa (3727)",
+        "weekly_frequency": 1,
+        "type": "Internacionales",
+        "notes": ""
+    }
+]

@@ -1,0 +1,482 @@
+[
+    {
+        "origin": "Barinas",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 5,
+        "type": "Regular",
+        "notes": "11:30 AM - 12:30 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:30 PM - 4:30 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "11:30 AM - 8:50 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:30 AM - 8:30 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:30 AM - 8:50 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:30 AM - 5:30 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:30 AM - 8:30 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:30 PM - 7:00 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "Puerto Ordaz",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:30 AM - 4:10 PM"
+    },
+    {
+        "origin": "Barinas",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "11:30 AM - 4:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barinas",
+        "operator": "Estelar",
+        "weekly_frequency": 5,
+        "type": "Regular",
+        "notes": "9:30 AM - 10:30 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barinas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:30 PM - 2:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Ciudad de Panamá",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:00 AM - 12:00 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Madrid",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:50 PM - 11:05 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Madrid",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:10 PM - 12:45 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": "7:50 PM - 8:50 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "7:30 PM - 8:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:30 PM - 5:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "6:00 PM - 7:00 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "7:00 AM - 8:20 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "3:00 PM - 4:20 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "3:30 PM - 4:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "7:00 AM - 8:00 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:00 AM - 10:00 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "12:10 PM - 1:10 PM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Barinas",
+        "operator": "Estelar",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": "6:30 AM - 10:30 AM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": "6:30 AM - 7:30 AM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "10:15 AM - 11:15 AM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "6:30 AM - 4:30 PM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Santa Barbara del Zulia",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "7:30 AM - 8:00 AM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": "6:30 AM - 1:10 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Barinas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 AM - 2:30 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:30 PM - 7:30 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "7:00 PM - 8:00 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 PM - 9:00 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "1:50 PM - 3:30 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 AM - 1:10 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "9:20 AM - 10:40 AM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:20 PM - 6:40 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:20 AM - 12:45 AM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:20 AM - 4:00 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "San Antonio del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "9:20 AM - 4:30 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "9:20 AM - 1:10 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Barinas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:00 AM - 2:30 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "5:30 PM - 6:30 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "9:00 AM - 10:00 AM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:00 AM - 12:00 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:30 PM - 8:50 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "5:30 PM - 8:30 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:00 AM - 8:50 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "4:30 PM - 6:10 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Puerto Ordaz",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "9:00 AM - 4:10 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Estelar",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "9:00 AM - 1:10 PM"
+    },
+    {
+        "origin": "Santa Barbara del Zulia",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "8:45 AM - 9:15 AM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Caracas",
+        "operator": "Estelar",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "2:10 PM - 3:10 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": "2:10 PM - 8:50 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Maracaibo",
+        "operator": "Estelar",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "2:10 PM - 8:30 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:10 PM - 5:30 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:10 PM - 8:30 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Porlamar",
+        "operator": "Estelar",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:10 PM - 7:00 PM"
+    }
+]

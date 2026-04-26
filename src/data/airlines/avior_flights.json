@@ -1,0 +1,650 @@
+[
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-02-20 | Discontinued 2025-02-26 | Days: Wednesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-02-09 | Discontinued 2025-02-23 | Days: Sunday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-01-21 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-02-21 | Discontinued OPEN | Days: Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-02-05 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-02-08 | Discontinued 2025-02-28 | Days: Friday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 043 | Effectivity 2025-02-07 | Discontinued 2025-02-28 | Days: Friday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 043 | Effectivity 2025-02-03 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 043 | Effectivity 2025-02-06 | Discontinued 2025-02-26 | Days: Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 043 | Effectivity 2025-02-20 | Discontinued OPEN | Days: Wednesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 041 | Effectivity 2025-02-09 | Discontinued OPEN | Days: Saturday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BLA Barcelona",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 043 | Effectivity 2025-02-02 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BOG Bogota",
+        "operator": "Avior",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "Flight 1421 | Effectivity 2025-02-02 | Discontinued OPEN | Days: Wednesday, Saturday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BRM Barquisimeto",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 071 | Effectivity 2025-02-06 | Discontinued 2025-02-27 | Days: Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BRM Barquisimeto",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 071 | Effectivity 2025-01-21 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BRM Barquisimeto",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 071 | Effectivity 2025-02-04 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BRM Barquisimeto",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 071 | Effectivity 2025-02-20 | Discontinued 2025-02-26 | Days: Wednesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "BRM Barquisimeto",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 071 | Effectivity 2025-02-07 | Discontinued 2025-02-28 | Days: Friday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 042 | Effectivity 2025-02-02 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 042 | Effectivity 2025-02-03 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 042 | Effectivity 2025-02-06 | Discontinued 2025-02-26 | Days: Thursday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 042 | Effectivity 2025-02-07 | Discontinued 2025-02-28 | Days: Friday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 042 | Effectivity 2025-02-12 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 042 | Effectivity 2025-02-08 | Discontinued OPEN | Days: Saturday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 040 | Effectivity 2025-02-04 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 040 | Effectivity 2025-02-07 | Discontinued 2025-02-27 | Days: Thursday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 040 | Effectivity 2025-02-20 | Discontinued OPEN | Days: Wednesday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 040 | Effectivity 2025-02-21 | Discontinued 2025-02-21 | Days: Friday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 040 | Effectivity 2025-02-02 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "BLA Barcelona",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 040 | Effectivity 2025-02-19 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "BOG Bogota",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1420 | Effectivity 2025-02-05 | Discontinued OPEN | Days: Tuesday"
+    },
+    {
+        "origin": "BOG Bogota",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1420 | Effectivity 2025-02-07 | Discontinued OPEN | Days: Friday"
+    },
+    {
+        "origin": "BRM Barquisimeto",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 070 | Effectivity 2025-01-21 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "BRM Barquisimeto",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 070 | Effectivity 2025-02-06 | Discontinued 2025-02-27 | Days: Thursday"
+    },
+    {
+        "origin": "BRM Barquisimeto",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 070 | Effectivity 2025-02-04 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "BRM Barquisimeto",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 070 | Effectivity 2025-02-07 | Discontinued 2025-02-28 | Days: Friday"
+    },
+    {
+        "origin": "BRM Barquisimeto",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 070 | Effectivity 2025-02-20 | Discontinued 2025-02-26 | Days: Wednesday"
+    },
+    {
+        "origin": "CUR Curazao",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1202 | Effectivity 2025-02-05 | Discontinued OPEN | Days: Wednesday"
+    },
+    {
+        "origin": "CUR Curazao",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1202 | Effectivity 2025-02-02 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "CUR Curazao",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "Flight 1202 | Effectivity 2025-02-03 | Discontinued OPEN | Days: Monday, Thursday"
+    },
+    {
+        "origin": "CUR Curazao",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1202 | Effectivity 2025-02-07 | Discontinued OPEN | Days: Friday"
+    },
+    {
+        "origin": "LSP Las Piedras",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 078 | Effectivity 2025-01-28 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "LSP Las Piedras",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 078 | Effectivity 2025-02-06 | Discontinued 2025-02-26 | Days: Thursday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-02-20 | Discontinued 2025-02-26 | Days: Wednesday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-02-06 | Discontinued 2025-02-27 | Days: Thursday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-02-03 | Discontinued 2025-02-24 | Days: Monday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-02-15 | Discontinued OPEN | Days: Friday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-02-04 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-02-22 | Discontinued 2025-02-22 | Days: Saturday"
+    },
+    {
+        "origin": "MAR Maracaibo",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 074 | Effectivity 2025-01-20 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "MDE Medellin",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "Flight 1412 | Effectivity 2025-02-03 | Discontinued OPEN | Days: Monday, Thursday"
+    },
+    {
+        "origin": "PMV Porlamar",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 022 | Effectivity 2025-01-24 | Discontinued 2025-02-26 | Days: Thursday"
+    },
+    {
+        "origin": "PMV Porlamar",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 022 | Effectivity 2025-02-04 | Discontinued 2025-02-24 | Days: Tuesday"
+    },
+    {
+        "origin": "PMV Porlamar",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 022 | Effectivity 2025-01-20 | Discontinued 2025-04-12 | Days: Sunday"
+    },
+    {
+        "origin": "PYH",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1090 | Effectivity 2025-02-16 | Discontinued OPEN | Days: Saturday"
+    },
+    {
+        "origin": "PZO Puerto Ordaz",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 062 | Effectivity 2025-02-20 | Discontinued 2025-02-26 | Days: Wednesday"
+    },
+    {
+        "origin": "PZO Puerto Ordaz",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 062 | Effectivity 2025-02-04 | Discontinued OPEN | Days: Monday"
+    },
+    {
+        "origin": "PZO Puerto Ordaz",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 062 | Effectivity 2025-02-21 | Discontinued 2025-02-21 | Days: Friday"
+    },
+    {
+        "origin": "PZO Puerto Ordaz",
+        "destination": "CCS Caracas",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 062 | Effectivity 2025-02-09 | Discontinued OPEN | Days: Saturday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "CUR Curazao",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1203 | Effectivity 2025-02-05 | Discontinued OPEN | Days: Wednesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "CUR Curazao",
+        "operator": "Avior",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "Flight 1203 | Effectivity 2025-02-03 | Discontinued OPEN | Days: Monday, Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "CUR Curazao",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1203 | Effectivity 2025-02-02 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "CUR Curazao",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1203 | Effectivity 2025-02-07 | Discontinued OPEN | Days: Friday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "LSP Las Piedras",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 079 | Effectivity 2025-02-03 | Discontinued 2025-02-24 | Days: Monday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "LSP Las Piedras",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 079 | Effectivity 2025-01-31 | Discontinued 2025-02-26 | Days: Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-02-04 | Discontinued 2025-02-25 | Days: Tuesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-01-18 | Discontinued OPEN | Days: Friday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-02-06 | Discontinued 2025-02-27 | Days: Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-02-20 | Discontinued 2025-02-26 | Days: Wednesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-02-03 | Discontinued 2025-02-24 | Days: Monday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-02-22 | Discontinued 2025-02-22 | Days: Saturday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MAR Maracaibo",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 075 | Effectivity 2025-01-20 | Discontinued OPEN | Days: Sunday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "MDE Medellin",
+        "operator": "Avior",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "Flight 1413 | Effectivity 2025-02-03 | Discontinued OPEN | Days: Monday, Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PMV Porlamar",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 023 | Effectivity 2025-02-13 | Discontinued 2025-02-26 | Days: Thursday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PMV Porlamar",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 023 | Effectivity 2025-02-04 | Discontinued 2025-02-24 | Days: Tuesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PMV Porlamar",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 023 | Effectivity 2025-02-24 | Discontinued 2025-04-19 | Days: Sunday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PYH",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 1091 | Effectivity 2025-02-16 | Discontinued OPEN | Days: Saturday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PZO Puerto Ordaz",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 063 | Effectivity 2025-02-09 | Discontinued OPEN | Days: Saturday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PZO Puerto Ordaz",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 063 | Effectivity 2025-02-20 | Discontinued OPEN | Days: Wednesday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PZO Puerto Ordaz",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 063 | Effectivity 2025-02-21 | Discontinued 2025-02-21 | Days: Friday"
+    },
+    {
+        "origin": "CCS Caracas",
+        "destination": "PZO Puerto Ordaz",
+        "operator": "Avior",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "Flight 063 | Effectivity 2025-02-04 | Discontinued OPEN | Days: Monday"
+    }
+]

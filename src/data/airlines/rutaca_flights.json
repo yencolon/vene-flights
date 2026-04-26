@@ -1,0 +1,1010 @@
+[
+    {
+        "origin": "Barcelona",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "6:20 PM - 7:00 PM"
+    },
+    {
+        "origin": "Barcelona",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:40 PM - 8:35 PM"
+    },
+    {
+        "origin": "Barcelona",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "5:30 PM - 6:10 PM"
+    },
+    {
+        "origin": "Barcelona",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:40 PM - 8:50 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:40 PM - 5:20 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:40 PM - 6:20 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:30 PM - 7:10 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:40 PM - 8:35 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Panama",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:30 AM - 12:20 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:10 PM - 3:20 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "12:20 PM - 1:30 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:40 PM - 8:50 PM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "San Antonio del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 AM - 8:55 AM"
+    },
+    {
+        "origin": "Barquisimeto",
+        "destination": "San Antonio del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:00 PM - 3:50 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barcelona",
+        "operator": "Rutaca",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "4:40 PM - 5:20 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "8:30 AM - 9:10 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:00 AM - 12:50 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:30 PM - 7:10 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "12:30 PM - 1:10 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Coro",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 AM - 8:47 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Las Piedras",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:30 AM - 9:15 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Las Piedras",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:25 PM - 4:10 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:30 PM - 7:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:00 PM - 5:00 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "7:50 PM - 8:35 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "12:00 PM - 12:45 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "12:00 PM - 12:45 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Panama",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "8:00 AM - 12:20 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "10:00 AM - 10:40 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "6:00 PM - 6:40 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "9:20 AM - 10:00 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 AM - 8:40 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:30 AM - 4:30 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:20 PM - 2:00 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "8:30 AM - 9:10 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:00 PM - 1:40 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:40 PM - 9:20 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto España",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 AM - 12:40 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "11:30 AM - 12:20 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "8:00 PM - 8:50 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "7:00 AM - 7:50 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 AM - 6:50 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "4:00 PM - 4:50 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "7:30 PM - 8:20 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Punta Cana",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "10:00 AM - 11:20 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "San Antonio del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 4,
+        "type": "Regular",
+        "notes": "8:00 AM - 9:00 AM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "3:00 PM - 4:00 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:00 AM - 12:00 PM"
+    },
+    {
+        "origin": "Caracas",
+        "destination": "Valencia",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "7:45 AM - 8:15 AM"
+    },
+    {
+        "origin": "Coro",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:40 AM - 10:27 AM"
+    },
+    {
+        "origin": "Coro",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:40 AM - 8:35 PM"
+    },
+    {
+        "origin": "Coro",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:40 AM - 8:50 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:55 PM - 7:10 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:15 AM - 11:00 AM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "5:00 PM - 5:45 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:15 AM - 5:00 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:15 AM - 8:35 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:55 PM - 8:35 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:15 AM - 8:50 PM"
+    },
+    {
+        "origin": "Las Piedras",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:55 PM - 8:50 PM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 AM - 8:00 AM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 PM - 7:00 PM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 AM - 8:35 PM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 AM - 12:20 PM"
+    },
+    {
+        "origin": "Maracaibo",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 AM - 4:00 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "6:00 AM - 6:45 AM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "1:40 PM - 2:25 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:40 PM - 2:25 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Las Piedras",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:10 PM - 2:55 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:00 PM - 5:00 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:30 PM - 7:30 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:00 AM - 10:40 AM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 PM - 6:40 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:20 AM - 10:00 AM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "6:00 AM - 12:20 PM"
+    },
+    {
+        "origin": "Maturín",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "3:00 PM - 4:00 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:20 PM - 5:30 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:30 PM - 3:40 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:30 PM - 6:10 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "4:10 PM - 4:50 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "3:40 PM - 4:20 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:40 AM - 12:20 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "9:40 AM - 10:20 AM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "3:00 PM - 3:40 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "2:40 PM - 3:20 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "7:00 PM - 7:40 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Puerto España",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:30 AM - 12:10 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "7:00 AM - 7:50 AM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "11:40 AM - 8:50 PM"
+    },
+    {
+        "origin": "Porlamar",
+        "destination": "Valencia",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "11:40 AM - 12:40 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Barcelona",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 AM - 12:40 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Barcelona",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 AM - 5:20 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Barcelona",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:20 PM - 5:20 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 AM - 7:10 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "1:20 PM - 7:10 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "6:00 AM - 6:50 AM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "1:20 PM - 2:10 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "9:00 AM - 9:50 AM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 AM - 8:50 AM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "6:00 PM - 6:50 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "4:00 PM - 5:00 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:30 PM - 7:30 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "6:00 PM - 8:35 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 7,
+        "type": "Regular",
+        "notes": "1:20 PM - 8:35 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "3:40 PM - 4:30 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "6:00 AM - 10:40 PM"
+    },
+    {
+        "origin": "Puerto Ordaz",
+        "destination": "Santo Domingo del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "6:00 AM - 4:00 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Barquisimeto",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "10:30 AM - 11:25 AM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:30 AM - 11:30 AM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 3,
+        "type": "Regular",
+        "notes": "5:00 PM - 6:00 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:30 AM - 5:20 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Maracaibo",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:30 AM - 7:30 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:30 AM - 8:35 AM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:30 AM - 8:50 PM"
+    },
+    {
+        "origin": "San Antonio del Táchira",
+        "destination": "Valencia",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "10:30 AM - 11:30 AM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:00 PM - 6:00 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "1:00 PM - 2:00 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Maturín",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:00 PM - 8:35 PM"
+    },
+    {
+        "origin": "Santo Domingo del Táchira",
+        "destination": "Puerto Ordaz",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "5:00 PM - 8:50 PM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "9:30 PM - 10:00 PM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Caracas",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "8:00 PM - 8:30 PM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "La Habana",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "10:00 AM - 12:30 PM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Porlamar",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "1:40 PM - 2:40 PM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Punta Cana",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "9:30 AM - 11:00 AM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "San Antonio del Táchira",
+        "operator": "Rutaca",
+        "weekly_frequency": 2,
+        "type": "Regular",
+        "notes": "3:00 PM - 4:00 PM"
+    },
+    {
+        "origin": "Valencia",
+        "destination": "Santiago de Cuba",
+        "operator": "Rutaca",
+        "weekly_frequency": 1,
+        "type": "Regular",
+        "notes": "10:00 AM - 2:00 PM"
+    }
+]
