@@ -9,6 +9,7 @@ export function App() {
   );
   const [hiddenDests, setHiddenDests] = useState<Set<string>>(new Set());
   const [showLabels, setShowLabels] = useState(true);
+  const [consolidateRoutes, setConsolidateRoutes] = useState(true);
   const [destQuery, setDestQuery] = useState("");
   const [originQuery, setOriginQuery] = useState("");
 
@@ -23,6 +24,8 @@ export function App() {
         setHiddenDests={setHiddenDests}
         showLabels={showLabels}
         setShowLabels={setShowLabels}
+        consolidateRoutes={consolidateRoutes}
+        setConsolidateRoutes={setConsolidateRoutes}
         destQuery={destQuery}
         setDestQuery={setDestQuery}
         originQuery={originQuery}
@@ -45,6 +48,7 @@ export function App() {
             hiddenOperators={hiddenOperators}
             hiddenDests={hiddenDests}
             showLabels={showLabels}
+            consolidateRoutes={consolidateRoutes}
           />
         </div>
       </main>

@@ -11,6 +11,8 @@ export interface SidebarProps {
   setHiddenDests: (next: Set<string>) => void;
   showLabels: boolean;
   setShowLabels: (next: boolean) => void;
+  consolidateRoutes: boolean;
+  setConsolidateRoutes: (next: boolean) => void;
   destQuery: string;
   setDestQuery: (next: string) => void;
   originQuery: string;
@@ -26,6 +28,8 @@ export function Sidebar({
   setHiddenDests,
   showLabels,
   setShowLabels,
+  consolidateRoutes,
+  setConsolidateRoutes,
   destQuery,
   setDestQuery,
   originQuery,
@@ -153,6 +157,21 @@ export function Sidebar({
           }
         />
         <span>Show city names</span>
+      </label>
+
+      <label
+        class="flex items-center gap-2 text-sm cursor-pointer"
+        style="color: var(--text-h)"
+      >
+        <input
+          type="checkbox"
+          checked={consolidateRoutes}
+          class="cursor-pointer"
+          onChange={(e) =>
+            setConsolidateRoutes((e.currentTarget as HTMLInputElement).checked)
+          }
+        />
+        <span>Consolidate routes</span>
       </label>
 
       <div class="flex flex-col gap-1.5">

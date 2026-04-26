@@ -306,6 +306,7 @@ interface Props {
   hiddenOperators: ReadonlySet<string>;
   hiddenDests: ReadonlySet<string>;
   showLabels: boolean;
+  consolidateRoutes: boolean;
 }
 
 export function VenezuelaMap({
@@ -314,6 +315,7 @@ export function VenezuelaMap({
   hiddenOperators,
   hiddenDests,
   showLabels,
+  consolidateRoutes,
 }: Props) {
   const [hoveredAirportIcao, setHoveredAirportIcao] = useState<string | null>(
     null,
@@ -336,7 +338,7 @@ export function VenezuelaMap({
     baseZoomY: number;
     pointerId: number;
     moved: boolean;
-    isGlobe: boolean;
+    isGlobeMode: boolean;
   } | null>(null);
 
   useLayoutEffect(() => {
@@ -527,12 +529,12 @@ export function VenezuelaMap({
         points.push([c.lon, c.lat]);
         if (c.country !== "Venezuela") hasInternational = true;
       }
-      // Dynamically switch between globe and flat based on zoom level.
-      // Globe mode is used for international routes, but at high zoom levels
-      // (> 2.5x) we switch to flat projection for better detail.
-      const shouldUseGlobe = hasInternational && zoomXform.s < 2.5;
-      const { R, isGlobe } = shouldUseGlobe
-        ? { R: 0.43 * VIEW, isGlobe: true }
+      // We always use the same globe projection R for international routes
+      // so there is no visual jump when crossing zoom levels.
+      // But we will use zoom scale to determine drag behavior (rotate vs pan).
+      const isGlobe = hasInternational;
+      const { R } = hasInternational
+        ? { R: 0.43 * VIEW }
         : computeScale(baseCenter, points);
       const rawLat = baseCenter[1] + rotation[1];
       const center: LonLat = [
@@ -663,13 +665,14 @@ export function VenezuelaMap({
       >
         <defs>
           <clipPath id="globe-clip">
-            <circle cx={CX} cy={CY} r={projector.R} />
+            <circle
+              cx={CX}
+              cy={CY}
+              r={projector.R}
+              transform={`translate(${zoomXform.x} ${zoomXform.y}) scale(${zoomXform.s})`}
+            />
           </clipPath>
         </defs>
-
-        {projector.isGlobe && (
-          <circle cx={CX} cy={CY} r={projector.R} class="globe-sea" />
-        )}
 
         <rect
           x={0}
@@ -688,7 +691,7 @@ export function VenezuelaMap({
               baseZoomY: zoomXform.y,
               pointerId: e.pointerId,
               moved: false,
-              isGlobe: projector.isGlobe,
+              isGlobeMode: projector.isGlobe && zoomXform.s < 2.5,
             };
           }}
           onPointerMove={(e) => {
@@ -700,7 +703,7 @@ export function VenezuelaMap({
             const dy = (e.clientY - drag.y) * scale;
             if (Math.abs(dx) + Math.abs(dy) > 4) drag.moved = true;
 
-            if (drag.isGlobe) {
+            if (drag.isGlobeMode) {
               // Globe mode: rotate the projection
               const degPerPx = 180 / Math.PI / projector.R / zoomXform.s;
               const baseLat = selectedAirport?.lat ?? 0;
@@ -798,7 +801,19 @@ export function VenezuelaMap({
                   );
                 }
                 const opEntries = [...opTotals.entries()];
-                const n = opEntries.length;
+                let displayEntries = opEntries;
+                if (consolidateRoutes && opEntries.length > 1) {
+                  // Primary color from operator with most flights
+                  const mainOp = opEntries.reduce((a, b) =>
+                    a[1] > b[1] ? a : b,
+                  )[0];
+                  const totalFreq = opEntries.reduce(
+                    (sum, curr) => sum + curr[1],
+                    0,
+                  );
+                  displayEntries = [[mainOp, totalFreq]];
+                }
+                const n = displayEntries.length;
                 // Spacing between parallel lines, in user-space coords. Capped
                 // total spread keeps wide bundles from overflowing the map.
                 const spacing = n > 1 ? Math.min(5, 36 / (n - 1)) : 0;
@@ -830,7 +845,7 @@ export function VenezuelaMap({
                       class="route-hit"
                       style={`stroke-width: ${hitWidth}px`}
                     />
-                    {opEntries.map(([operator, total], li) => {
+                    {displayEntries.map(([operator, total], li) => {
                       const lw = Math.max(1.6, Math.min(4.5, 1.4 + total / 5));
                       const offset = (li - (n - 1) / 2) * spacing;
                       return (
@@ -958,10 +973,6 @@ export function VenezuelaMap({
             );
           })}
         </g>
-
-        {projector.isGlobe && (
-          <circle cx={CX} cy={CY} r={projector.R} class="globe-rim" />
-        )}
       </svg>
 
       {selectedAirport && (
