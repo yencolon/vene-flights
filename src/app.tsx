@@ -35,7 +35,7 @@ export function App() {
         onClose={() => setIsSidebarOpen(false)}
       />
       <main class="flex-1 flex flex-col relative h-[100dvh]">
-        <header class="shrink-0 text-center py-3 md:py-6 px-4 relative bg-transparent z-10 pointer-events-none">
+        <header class="shrink-0 text-center py-3 md:py-6 px-4 relative bg-transparent z-10 pointer-events-none xl:hidden">
           <h1
             class="text-2xl md:text-4xl font-medium mb-1 md:mb-2 pointer-events-auto"
             style="color: var(--text-h)"

@@ -30,6 +30,7 @@ export const airports: ReadonlyArray<Airport> = [
   { icao: 'SVLF', iata: 'LFR', name: 'La Fría', city: 'La Fría', lon: -72.2710, lat: 8.2391 },
   { icao: 'SVRS', iata: 'LRV', name: 'Los Roques', city: 'Los Roques', lon: -66.6755, lat: 11.7501 },
   { icao: 'SVSZ', iata: 'SBB', name: 'Miguel Urdaneta Fernández', city: 'Santa Bárbara del Zulia', lon: -71.9522, lat: 8.9745 },
-  { icao: 'SVSO', iata: 'STD', name: 'Mayor Buenaventura Vivas', city: 'Santo Domingo del Táchira', lon: -70.7714, lat: 7.5694 },
+  //Aeropuerto: El Aeropuerto Internacional de Santo Domingo (SVSO) se encuentra cerca, con coordenadas cercanas a 7°34′07″N 72°00′06″O
+  { icao: 'SVSO', iata: 'STD', name: 'Mayor Buenaventura Vivas', city: 'Santo Domingo del Táchira', lon: -72.0017, lat: 7.5686 },
   { icao: 'SVVL', iata: 'VLV', name: 'Dr. Antonio Nicolás Briceño', city: 'Valera', lon: -70.5841, lat: 9.3409 },
 ]
